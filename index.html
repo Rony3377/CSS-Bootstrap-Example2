@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>animation übungen</title>
+  </head>
+  <style>
+    /*****DIV1 img*****/
+    .DIV1 img {
+      width: 200px;
+      height: 120px;
+      animation-name: bild;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+
+    /*****DIV1 *****/
+    .DIV1 {
+      border: blueviolet solid 1px;
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      position: fixed;
+      animation-name: DIV1bewegen;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    @keyframes DIV1bewegen {
+      0% {
+        top: 55vh;
+        left: 80vw;
+      }
+      100% {
+        top: 0vh;
+        left: 0vw;
+      }
+    }
+    .DIV1 div {
+      width: 200px;
+      height: 200px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      animation-name: DIV1;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    .DIV1 div img {
+      width: 200px;
+      height: 200px;
+    }
+    @keyframes DIV1 {
+      0% {
+        transform: translateX(-300%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    .DIV1 div .bild-animation-1 {
+      animation-name: bild-animation-1;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes bild-animation-1 {
+      0% {
+        filter: sepia(2) blur(2px);
+      }
+      100% {
+        filter: sepia(0) blur(0px);
+      }
+    }
+
+    /*****DIV3 *****/
+    .DIV3 {
+      position: absolute;
+      border: blueviolet solid 1px;
+      width: 200px;
+      height: 200px;
+      overflow: auto;
+      top: 0px;
+      right: 0px;
+      animation-name: DIV3;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes DIV3 {
+      0% {
+        background-color: white;
+        width: 200px;
+        height: 200px;
+      }
+      100% {
+        background-color: darkblue;
+        width: 320px;
+        height: 320px;
+      }
+    }
+
+    .DIV3 p {
+      color: black;
+      font-size: 10px;
+      animation-name: DIV3-p;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes DIV3-p {
+      0% {
+        color: #000;
+        width: 50%;
+        height: 100%;
+      }
+      100% {
+        color: white;
+        width: 120%;
+        height: 150%;
+      }
+    }
+
+    /*****DIV2 *****/
+    .DIV2 {
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      border: blueviolet solid 1px;
+      width: 200px;
+      height: 200px;
+      animation-name: DIV2;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes DIV2 {
+      0% {
+        background-color: aquamarine;
+        transform: translatex(-400%);
+      }
+      100% {
+        background-color: bisque;
+        transform: translatex(-0%);
+      }
+    }
+
+    .DIV2 p {
+      font-size: 40px;
+      text-align: center;
+      margin-top: 100px;
+      animation-name: DIV2-p;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes DIV2-p {
+      0% {
+        color: rgb(69, 54, 132);
+        transform: scale(1);
+      }
+      100% {
+        color: rgb(188, 110, 14);
+        transform: scale(2);
+      }
+    }
+
+    /*****DIV4 *****/
+    .DIV4 {
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      overflow: hidden;
+      border: blueviolet solid 1px;
+      width: 200px;
+      height: 200px;
+      animation-name: DIV4bewegen;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    @keyframes DIV4bewegen {
+      0% {
+        transform: translatey(-100%);
+      }
+      100% {
+        transform: translatey(-0%);
+      }
+    }
+
+    .DIV4 .bilderkasten1 {
+      width: 200px;
+      animation-name: bilderkasten1Bewegung;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+
+    @keyframes bilderkasten1Bewegung {
+      0% {
+        margin-top: -600px;
+      }
+      100% {
+        margin-top: 0px;
+      }
+    }
+
+    /*****DIV4 img *****/
+    .DIV4 img {
+      display: flex;
+      align-items: center;
+      width: 200px;
+      height: 200px;
+      animation-name: DIV4-bildbewegen;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+      animation-direction: alternate-reverse;
+      animation-timing-function: ease;
+    }
+    @keyframes DIV4-bildbewegen {
+      0% {
+        filter: hue-rotate(0deg);
+      }
+      100% {
+        filter: hue-rotate(360deg);
+      }
+    }
+  </style>
+  <body>
+    <!--DIV1-->
+    <div class="DIV1">
+      <div>
+        <img
+          src="https://edu-news.ro/wp-content/uploads/2016/04/ziua-pamantului.jpg"
+          alt="f1"
+          class="bild-animation-1"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.dc4k6WpAe7CCKV9jAD4nWwHaHI?pid=ImgDet&w=796&h=767&rs=1"
+          alt="f2"
+          class="bild-animation-1"
+        />
+        <img
+          src="https://blogs.tu-ilmenau.de/klima/files/2019/06/Allgemein-Was-ist-Klimawandel.jpg"
+          alt="f3"
+          class="bild-animation-1"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.NJXy9-rJil31LSVe3ioA0gHaFj?pid=ImgDet&w=1280&h=960&rs=1"
+          alt="f4"
+          class="bild-animation-1"
+        />
+      </div>
+    </div>
+    <div class="DIV2">
+      <p>"wow"</p>
+    </div>
+    <div class="DIV3">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat ut at
+        officia porro consectetur praesentium dicta quae, aspernatur quibusdam
+        hic magnam! Voluptatum sequi, perferendis earum ducimus ratione suscipit
+        est doloribus.
+      </p>
+    </div>
+
+    <div class="DIV4">
+      <div class="bilderkasten1">
+        <img
+          src="https://www.envigis.gr/images/structure-finance.png"
+          alt="o1"
+        />
+        <img
+          src="https://th.bing.com/th/id/OIP.4r4UQEilb6mVadvkmocvTAHaEK?pid=ImgDet&w=1200&h=675&rs=1"
+          alt="o2"
+        />
+        <img
+          src="https://cuidemoselplaneta.org/wp-content/uploads/2020/09/tecnologias-no-contaminantes-1024x708.jpg"
+          alt="o3"
+        />
+        <img
+          src="https://th.bing.com/th/id/R.04e196163ea6348bd4e6b789b5cd2250?rik=wCwN1%2bqi2CkW6w&riu=http%3a%2f%2fddu358.minsk.edu.by%2fru%2fsm.aspx%3fguid%3d16953&ehk=MJy0CAy6SeA%2bAn4zAK251AjBe4i%2bn%2fqGoOPj2y4i2Lo%3d&risl=&pid=ImgRaw&r=0"
+          alt="o4"
+        />
+      </div>
+    </div>
+  </body>
+</html>
